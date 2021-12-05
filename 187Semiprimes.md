@@ -37,8 +37,8 @@ We'll use the above sieve to determine all primes under 50'000'000, and then ite
 
 ```c++
 int ans = 0;
-for (int i = 0; primes[i] * primes[i] < limit; ++i) {
-    for (int j = i; primes[i] * primes[j] < limit; ++j) {
+for (int i = 0; primes[i] * primes[i] < 100000000; ++i) {
+    for (int j = i; primes[i] * primes[j] < 100000000; ++j) {
         ans++;
     }
 }
